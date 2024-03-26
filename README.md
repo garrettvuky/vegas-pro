@@ -2,9 +2,13 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+You need to have node.js installed on your computer.
 
-In the project directory, you can run:
+After installing node, open the project directory in your IDE. Then, navigate to the IDE terminal, and run
+
+## `npm install`
+
+to run the project, type
 
 ### `npm start`
 
