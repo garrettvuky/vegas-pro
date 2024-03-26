@@ -1,16 +1,23 @@
 import React from 'react';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
+import fade from '../videos/fade.mp4';
+import pan from '../videos/pan.mp4';
+import zoom from '../videos/zoom.mp4';
 export default function ActionButtonNav({ onSplit }) {
     const ChangeVid = () => {
-        const video = document.getElementById('vid');
-        video.src = 'http://localhost:3000/static/media/fade.f4221a8eee721a9ae459.mp4';
+        const videoElement = document.getElementById('vid');
+        videoElement.src = fade;
+    }
+    const ChangeVidZoom = () => {
+        const videoElement = document.getElementById('vid');
+        videoElement.src = zoom;
     }
     return (
         <div className='action-top-btns-nav'>
         <div className='search-btn' id='normal-edit'></div>
         <div className='search-btn' id='select-region'></div>
-        <div className='search-btn' id='zoom-edit'></div>
+        <div className='search-btn' id='zoom-edit' onClick={ChangeVidZoom}></div>
         <div className='search-btn' id='splitbtn' onClick={onSplit}></div>
         <div className='search-btn' id='lock-event'></div>
         <div className='search-btn' id='insert-marker'></div>
@@ -53,16 +60,16 @@ export default function ActionButtonNav({ onSplit }) {
                     <div>
                         <button className='contentbtn-pan'onClick=
                             {() => {
-                                const video = document.getElementById('vid');
-                                video.src = 'http://localhost:3000/static/media/zoom.474a23d6ceff3978e51f.mp4';
+                                const videoElement = document.getElementById('vid');
+                                videoElement.src = zoom;
                                 close()
                                 }}>
                                 Zoom Video
                         </button>
                         <button className='contentbtn-pan'onClick=
                             {() => {
-                                const video = document.getElementById('vid');
-                                video.src = 'http://localhost:3000/static/media/pan.8d98a5fa6ec1936e6bbe.mp4';
+                                const videoElement = document.getElementById('vid');
+                                videoElement.src = pan;
                                 close()
                                 }}>
                                 Pan Video Across Screen
