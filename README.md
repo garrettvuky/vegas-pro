@@ -6,7 +6,7 @@ You need to have node.js installed on your computer.
 
 After installing node, open the project directory in your IDE. Then, navigate to the IDE terminal, and run
 
-## 'npm install'
+## `npm install'`
 
 to run the project, type
 
