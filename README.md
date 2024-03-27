@@ -10,7 +10,7 @@ After installing node, open the project directory in your IDE. Then, navigate to
 
 to run the project, type
 
-### `npm start`
+## `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -21,13 +21,13 @@ This program functions as a redesign of Vegas Pro editing software. It will be u
 
 The program allows users to customize the videos text, opacity, fade in/out, zoom, panning, linked audio and video, and split functionality.
 
-#### `Parts of the program that don't work:`
+### `Parts of the program that don't work:`
 
 Users are unable to drag the video or audio on the slider, select multiple portions of video/audio, create regions, and customize the text to be added.
 
 Users are also unable to select the following tabs: File Explorer, Project Media, Tutorial, Media Generator, Transitions, Notes, Search, Help, Edit, View, Insert, Tools, Options, and Help.
 
-##### `Representative tasks to complete:` 
+#### `Representative tasks to complete:` 
 
 These tasks need to be completed in order.
 
