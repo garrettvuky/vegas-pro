@@ -13,21 +13,24 @@ export default function ActionButtonNav({ onSplit }) {
         const videoElement = document.getElementById('vid');
         videoElement.src = zoom;
     }
+    const AlertUser = () => {
+        alert('Feature Not Yet Implemented.');
+    }
     return (
         <div className='action-top-btns-nav'>
-        <div className='search-btn' id='normal-edit'></div>
-        <div className='search-btn' id='select-region'></div>
+        <div className='search-btn' id='normal-edit' onClick={AlertUser}></div>
+        <div className='search-btn' id='select-region' onClick={AlertUser}></div>
         <div className='search-btn' id='zoom-edit' onClick={ChangeVidZoom}></div>
         <div className='search-btn' id='splitbtn' onClick={onSplit}></div>
-        <div className='search-btn' id='lock-event'></div>
-        <div className='search-btn' id='insert-marker'></div>
-        <div className='search-btn' id='insert-region'></div>
-        <div className='search-btn' id='snapping-tool'></div>
-        <div className='search-btn' id='cross-fade'></div>
+        <div className='search-btn' id='lock-event' onClick={AlertUser}></div>
+        <div className='search-btn' id='insert-marker' onClick={AlertUser}></div>
+        <div className='search-btn' id='insert-region' onClick={AlertUser}></div>
+        <div className='search-btn' id='snapping-tool' onClick={AlertUser}></div>
+        <div className='search-btn' id='cross-fade' onClick={AlertUser}></div>
         <div className='search-btn' id='fade' onClick={ChangeVid}></div>
         <div className='search-btn' id='link-plus' onClick={()=> {alert('Audio Linked From Video')}}></div>
         <div className='search-btn' id='link-minus' onClick={()=> {alert('Audio Unlinked From Video')}}></div>
-        <div className='search-btn' id='auto-ripple'></div>
+        <div className='search-btn' id='auto-ripple' onClick={AlertUser}></div>
         <Popup trigger=
             {<div className='search-btn' id='text-btn'></div>}
         modal nested>
@@ -79,17 +82,17 @@ export default function ActionButtonNav({ onSplit }) {
             )
         }
         </Popup>
-        <div className='search-btn'></div>
-        <div className='search-btn'></div>
-        <div className='search-btn'></div>
-        <div className='search-btn'></div>
-        <div className='search-btn'></div>
-        <div className='search-btn'></div>
-        <div className='search-btn'></div>
-        <div className='search-btn'></div>
-        <div className='search-btn'></div>
-        <div className='search-btn'></div>
-        <div className='search-btn-last'></div>
+        <div className='search-btn' onClick={AlertUser}></div>
+        <div className='search-btn' onClick={AlertUser}></div>
+        <div className='search-btn' onClick={AlertUser}></div>
+        <div className='search-btn' onClick={AlertUser}></div>
+        <div className='search-btn' onClick={AlertUser}></div>
+        <div className='search-btn' onClick={AlertUser}></div>
+        <div className='search-btn' onClick={AlertUser}></div>
+        <div className='search-btn' onClick={AlertUser}></div>
+        <div className='search-btn' onClick={AlertUser}></div>
+        <div className='search-btn' onClick={AlertUser}></div>
+        <div className='search-btn-last' onClick={AlertUser}></div>
       </div>
     );
 }
