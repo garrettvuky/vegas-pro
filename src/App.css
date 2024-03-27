@@ -88,11 +88,13 @@
         font-size:50px;
     }
     .contentbtn {
+        cursor: pointer;
         margin-top:5%;
         margin-bottom:3%;
         font-size:20px;
     }
     .contentbtn-pan {
+        cursor: pointer;
         margin-top:5%;
         margin-bottom:3%;
         margin-right: 10%;

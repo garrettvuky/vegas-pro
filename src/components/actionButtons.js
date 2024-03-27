@@ -25,8 +25,8 @@ export default function ActionButtonNav({ onSplit }) {
         <div className='search-btn' id='snapping-tool'></div>
         <div className='search-btn' id='cross-fade'></div>
         <div className='search-btn' id='fade' onClick={ChangeVid}></div>
-        <div className='search-btn' id='link-plus'></div>
-        <div className='search-btn' id='link-minus'></div>
+        <div className='search-btn' id='link-plus' onClick={()=> {alert('Audio Linked From Video')}}></div>
+        <div className='search-btn' id='link-minus' onClick={()=> {alert('Audio Unlinked From Video')}}></div>
         <div className='search-btn' id='auto-ripple'></div>
         <Popup trigger=
             {<div className='search-btn' id='text-btn'></div>}
