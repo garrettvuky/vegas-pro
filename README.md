@@ -15,60 +15,32 @@ to run the project, type
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### `What does this program do?`
 
-### `npm test`
+This program functions as a redesign of Vegas Pro editing software. It will be used to test the redesign and provide feedback on the interactability.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The program allows users to customize the videos text, opacity, fade in/out, zoom, panning, linked audio and video, and split functionality.
 
-### `npm run build`
+#### `Parts of the program that don't work:`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Users are unable to drag the video or audio on the slider, select multiple portions of video/audio, create regions, and customize the text to be added.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Users are also unable to select the following tabs: File Explorer, Project Media, Tutorial, Media Generator, Transitions, Notes, Search, Help, Edit, View, Insert, Tools, Options, and Help.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##### `Representative tasks to complete:` 
 
-### `npm run eject`
+These tasks need to be completed in order.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+ 1. Add the provided media onto the track: This is done by dragging the vid.mp4 to the bottom of the screen onto the video/audio track.
+ 2. Play the video from the beginning: This is done by clicking the play button on the video preview or clicking the stop button, then the play button.
+ 3. Split the video: This is done by clicking the split button on the third row of buttons that resembles scissors cutting a video reel in half.
+ 4. Seperate linked audio and video: this is done by clicking the chain resembled button on the video track, or by clicking the chain symbol on the third row of buttons with a    minus symbol next to it.
+ 5. Add text to the video: This is done by clicking the T+ button on the third row of buttons, then clicking the 'Add Text' button.
+ 6. Adding and removing a visual effect: this is done by either selecting the Fx button on the video track, or selecting the VideoFX button on the second row of buttons. This will open a menu which you can click effects to select them, then click the add button to add them. You can then click the selected effects and then click remove to remove the effects.
+ 7. Fading the video in/out: This is done by selecting the fade icon on the video track or on the third row of buttons.
+ 8. Pan the video across the screen: This is done by selecting the crop button on the video track, or on the third row of buttons. Then, select the 'Pan Video Across Screen' button to complete the task.
+ 9. Zoom in on the video: This is done by selecting the crop button on the video track, or on the third row of buttons, or the search icon with a plus in the middle. Then, select the 'Zoom Video' button to complete the task.
+ 10. Change opacity of a specific clip: This is done by adjusting the arrows on the clip up or down, or by selecting the opacity button on the video clip.
+ 11. Change audio volume of a specific clip: This is done by adjusting the arrows on the clip up or down. or by selecting the volume icon on the audio clip.
+ 12. Render the video: this is done by choosing the file option on the top left of the screen, then clicking Render As..
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
