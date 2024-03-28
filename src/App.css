@@ -2,16 +2,16 @@
     .App {
         height: 100vh;
         width: 100vw;
-        background-color: white;
-        margin: 0; 
+        background-color: #cccccc; /* Light grey background */
+        margin: 0;
         overflow: hidden;
     }
     .fileNav {
-        background-color: white;
+        background-color: #e6e6e6;
         height: 2.5%;
         width: 100%;
-        display:flex;
-        border-bottom: .1rem solid black;
+        display: flex;
+        border-bottom: 1px solid #cccccc;
         align-items: center;
     }
     .fileNav-btn {
@@ -20,18 +20,18 @@
         width:4.5rem;
     }
     .top-row-btn-nav {
-        background-color: white;
+        background-color: #e6e6e6;
         height: 3%;
         width: 100%;
         display: flex;
         flex-direction: row;
-        border-bottom: .1rem solid black;
+        border-bottom: .1rem solid #cccccc;
         box-sizing: border-box;
     }
     
     .top-row-btn-container {
         flex: 1;
-        border-right: .1rem solid black;
+        border-right: 1px solid #e6e6e6;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -43,23 +43,23 @@
         align-items: center;
     }
     .action-top-btns-nav {
-        background-color: white;
+        background-color: #e6e6e6;
         height: 3%;
         width: 100%;
         display: flex;
         flex-direction: row;
-        border-bottom: .1rem solid black;
+        border-bottom: 1px solid #cccccc;
     }
     .search-btn {
         text-align: center;
-        border-right: .1rem solid black;
-        height:100%;
+        border-right: 1px solid #cccccc;
+        height: 100%;
         width: 5%;
     }
     .add-favorite {
         text-align: center;
-        border-right: .1rem solid black;
-        height:100%;
+        border-right: 1px solid #cccccc;
+        height: 100%;
         width: 5%;
     }
     .modal-pan {
@@ -88,13 +88,11 @@
         font-size:50px;
     }
     .contentbtn {
-        cursor: pointer;
         margin-top:5%;
         margin-bottom:3%;
         font-size:20px;
     }
     .contentbtn-pan {
-        cursor: pointer;
         margin-top:5%;
         margin-bottom:3%;
         margin-right: 10%;
@@ -106,7 +104,7 @@
         width: 5%;
     }
     .menu-preview-container {
-        background-color: white;
+        background-color: #cccccc;
         height: 43%;
         width: 100%;
         display: flex;
@@ -114,7 +112,7 @@
         border-bottom: .1rem solid black;
     }
     .menu-container {
-        background-color: white;
+        background-color: #cccccc;
         height: 100%;
         width: 35%;
         display: flex;
@@ -127,22 +125,24 @@
         border-right: .1rem solid black;
     }
     .file-container-right {
-        margin-top: 2%;
-        margin-left: 2%;
-        height: 100%;
-        width: 79.9%;
-    }
+            margin-top: 2%;
+            height: 100%;
+            width: 79.9%;
+        }
+
     .file-container-left {
         text-align: center;
         height: 100%;
         width: 15%;
         border-right: .1rem solid black;
+        background-color: #cccccc;
     }
     .visual-effects-container {
         display:flex;
         flex-direction:row;
         height: 100%;
         width: 89%;
+        background-color: #cccccc;
     }
     .visual-effects-left {
         height: 100%;
@@ -187,7 +187,7 @@
         width: 50%;
         display: flex;
         flex-direction: row;
-        align-items: left;
+        align-items: flex-start;
     }
     .video-file-left {
         text-align: right;
@@ -248,7 +248,7 @@
         width: 10%;
     }
     .time-container {
-        background-color: white;
+        background-color: #cccccc;
         height: 5%;
         width: 100%;
         display: flex;
@@ -257,7 +257,7 @@
         text-align: center;
     }
     .video-container {
-        background-color: white;
+        background-color: #cccccc;
         height: 100%;
         width: 35%;
         display: flex;
@@ -266,7 +266,7 @@
         font-size:20px;
     }
     .video-container-right {
-        background-color: white;
+        background-color: #cccccc;
         height: 100%;
         width: 64.9%;
         display: flex;
@@ -277,13 +277,13 @@
         width: 84.9%;
     }
     .video-track-container {
-        background-color: white;
+        background-color: #cccccc;
         height: 43%;
         width: 100%;
         display: flex;
     }
     .time-left-container {
-        background-color: white;
+        background-color: #cccccc;
         justify-content: center;
         height: 100%;
         width: 35%;
@@ -293,13 +293,13 @@
         border-right: .1rem solid black;
     }
     .time-right-container {
-        background-color: white;
+        background-color: #cccccc;
         height: 100%;
         width: 65%;
         display:flex;
     }
     .time-container {
-        background-color: white;
+        background-color: #cccccc;
         height: 5%;
         width: 100%;
         display: flex;
@@ -307,7 +307,7 @@
         border-bottom: .1rem solid black;
     }
     .track-time-container {
-        background-color: white;
+        background-color: #cccccc;
         height: 10%;
         width: 50%;
         display: flex;
@@ -531,21 +531,21 @@
     #opacitytext {
         height: 20%;
         width: 50%;
-    }  
+    }
       .opacity-slider-range {
         -webkit-appearance: none;
         appearance: none;
-        width: 100%;
-        height: 50%;
+        width: 100%; /* Set the width of the vertical slider */
+        height: 50%; /* Set the height of the vertical slider */
         background: transparent;
         outline: none;
-        position: absolute;
-        top: 8%;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%) rotate(-90deg);
+        position: absolute; /* Position absolutely within .opacity-slider */
+        top: 8%; /* Start from the top of .opacity-slider */
+        bottom: 0; /* Go to the bottom of .opacity-slider */
+        left: 50%; /* Position horizontally in the middle */
+        transform: translateX(-50%) rotate(-90deg); /* Rotate the slider vertically and center it horizontally */
       }
-      
+
       .opacity-slider-range::-webkit-slider-thumb {
         -webkit-appearance: none;
         appearance: none;
@@ -556,24 +556,24 @@
         cursor: pointer;
       }
       .video-symbol::before {
-        content: "";
-        display: inline-block;
-        width: 50%;
-        height: 100%;
-        background-image: url(images/Video_Symbol.png); 
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+        content: ""; /* This is necessary for the ::before pseudo-element */
+        display: inline-block; /* Ensure the pseudo-element behaves like an inline element */
+        width: 50%; /* Set the width of the pseudo-element */
+        height: 100%; /* Set the height of the pseudo-element */
+        background-image: url(images/Video_Symbol.png); /* Set the background image */
+        background-size: cover; /* Cover the entire area of the container */
+        background-repeat: no-repeat; /* Prevent the background from repeating */
+        background-position: center; /* Center the background image */
     }
     .audio-symbol::before {
-        content: "";
-        display: inline-block;
-        width: 50%;
-        height: 100%;
-        background-image: url(images/Music_Symbol.png); 
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+        content: ""; /* This is necessary for the ::before pseudo-element */
+        display: inline-block; /* Ensure the pseudo-element behaves like an inline element */
+        width: 50%; /* Set the width of the pseudo-element */
+        height: 100%; /* Set the height of the pseudo-element */
+        background-image: url(images/Music_Symbol.png); /* Set the background image */
+        background-size: cover; /* Cover the entire area of the container */
+        background-repeat: no-repeat; /* Prevent the background from repeating */
+        background-position: center; /* Center the background image */
     }
       .opacity-slider-range::-moz-range-thumb {
         width: 50px;
@@ -585,17 +585,17 @@
       .opacity-slider-range-split {
         -webkit-appearance: none;
         appearance: none;
-        width: 200%;
-        height: 50%;
+        width: 200%; /* Set the width of the vertical slider */
+        height: 50%; /* Set the height of the vertical slider */
         background: transparent;
         outline: none;
-        position: absolute;
-        top: 8%;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%) rotate(-90deg);
+        position: absolute; /* Position absolutely within .opacity-slider */
+        top: 8%; /* Start from the top of .opacity-slider */
+        bottom: 0; /* Go to the bottom of .opacity-slider */
+        left: 50%; /* Position horizontally in the middle */
+        transform: translateX(-50%) rotate(-90deg); /* Rotate the slider vertically and center it horizontally */
       }
-      
+
       .opacity-slider-range-split::-webkit-slider-thumb {
         -webkit-appearance: none;
         appearance: none;
@@ -605,7 +605,7 @@
         background: url('images/updown.png');
         cursor: pointer;
       }
-      
+
       .opacity-slider-range-split::-moz-range-thumb {
         width: 50px;
         height: 50px;
@@ -628,7 +628,7 @@
         width: 10%;
         border-left: .1rem solid;
         border-right: .1rem solid;
-        border-bottom: .1rem solid; 
+        border-bottom: .1rem solid;
     }
     .slider {
         margin-top: 3%;
@@ -649,15 +649,15 @@
         width: 50px;
         height: 20px;
     }
-      
-    .switch input { 
+
+    .switch input {
         opacity: 0;
         width: 0;
         height: 0;
     }
     .top-row-btn {
         text-align:center;
-        
+
         width: 100%;
         height: 100%;
     }
@@ -667,18 +667,18 @@
     .slider-round {
         border-radius: 34px;
     }
-      
+
     .slider-round:before {
         border-radius: 50%;
     }
     .fileNav-btn:hover {
         cursor: pointer;
-        background-color: grey;
+        background-color: #17a2b8;
         color: white;
     }
     .top-row-btn:hover {
         cursor: pointer;
-        background-color: grey;
+        background-color: #17a2b8;
         color: white;
     }
     .slider-round {
@@ -688,11 +688,11 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: #ccc;
+        background-color: grey;
         -webkit-transition: .4s;
         transition: .4s;
       }
-      
+
       .slider-round:before {
         position: absolute;
         content: "";
@@ -700,24 +700,24 @@
         width: 13px;
         left: 4px;
         bottom: 4px;
-        background-color: white;
+        background-color: #cccccc;
         -webkit-transition: .4s;
         transition: .4s;
       }
-      
+
       input:checked + .slider-round {
         background-color: #2196F3;
       }
-      
+
       input:focus + .slider-round {
         box-shadow: 0 0 1px #2196F3;
       }
-      
+
       input:checked + .slider-round:before {
         -webkit-transform: translateX(26px);
         -ms-transform: translateX(26px);
         transform: translateX(26px);
-      }  
+      }
     .slider::-webkit-slider-thumb {
         -webkit-appearance: none;
         appearance: none;
@@ -727,7 +727,7 @@
         background: url('images/downwardcaret.png');
         cursor: pointer;
     }
-      
+
     .slider::-moz-range-thumb {
         width: 25px;
         height: 25px;
@@ -741,7 +741,7 @@
     }
     #range-slider {
         width: 100%;
-        
+
     }
     #range-slider .range-slider__thumb[data-lower] {
         width: 0;
@@ -752,344 +752,344 @@
     }
     .search-btn:hover {
         cursor: pointer;
-        background-color: grey;
+        background-color: #17a2b8;
     }
     .search-btn-last:hover {
-        background-color: grey;
+        background-color: #17a2b8;
     }
     .video-file:hover {
         cursor: pointer;
-        background-color:grey;
+        background-color:#17a2b8;
         color:white;
     }
     .visual-effect:hover {
         border: .2rem solid blue;
     }
     .video-control-split:hover {
-        cursor: pointer; 
+        cursor: pointer;
 
     }
     .audio-control-split:hover {
-        cursor: pointer; 
+        cursor: pointer;
 
     }
     .video-control:hover {
-        cursor: pointer; 
+        cursor: pointer;
 
     }
     .audio-control:hover {
-        cursor: pointer; 
+        cursor: pointer;
 
     }
     .control::before {
-        content: ""; 
-        display: inline-block; 
-        width: 50%; 
-        height: 100%; 
-        background-image: url(images/playbuttonicon.png); 
-        background-size: cover; 
-        background-repeat: no-repeat; 
-        background-position: center; 
+        content: ""; /* This is necessary for the ::before pseudo-element */
+        display: inline-block; /* Ensure the pseudo-element behaves like an inline element */
+        width: 50%; /* Set the width of the pseudo-element */
+        height: 100%; /* Set the height of the pseudo-element */
+        background-image: url(images/playbuttonicon.png); /* Set the background image */
+        background-size: cover; /* Cover the entire area of the container */
+        background-repeat: no-repeat; /* Prevent the background from repeating */
+        background-position: center; /* Center the background image */
     }
     .solo::before {
-        content: ""; 
-        display: inline-block; 
-        width: 100%; 
-        height: 100%; 
-        background-image: url(images/solo.png); 
-        background-size: cover; 
-        background-repeat: no-repeat; 
-        background-position: center; 
+        content: ""; /* This is necessary for the ::before pseudo-element */
+        display: inline-block; /* Ensure the pseudo-element behaves like an inline element */
+        width: 100%; /* Set the width of the pseudo-element */
+        height: 100%; /* Set the height of the pseudo-element */
+        background-image: url(images/solo.png); /* Set the background image */
+        background-size: cover; /* Cover the entire area of the container */
+        background-repeat: no-repeat; /* Prevent the background from repeating */
+        background-position: center; /* Center the background image */
     }
     .mute::before {
-        content: ""; 
-        display: inline-block; 
-        width: 100%; 
-        height: 100%; 
-        background-image: url(images/Unmute.png); 
-        background-size: cover; 
-        background-repeat: no-repeat; 
-        background-position: center; 
+        content: ""; /* This is necessary for the ::before pseudo-element */
+        display: inline-block; /* Ensure the pseudo-element behaves like an inline element */
+        width: 100%; /* Set the width of the pseudo-element */
+        height: 100%; /* Set the height of the pseudo-element */
+        background-image: url(images/Unmute.png); /* Set the background image */
+        background-size: cover; /* Cover the entire area of the container */
+        background-repeat: no-repeat; /* Prevent the background from repeating */
+        background-position: center; /* Center the background image */
     }
     #splitbtn::before {
-        content: ""; 
-        display: inline-block; 
-        width: 45%; 
-        height: 100%; 
-        background-image: url(images/TrimSplit.png); 
-        background-size: cover; 
-        background-repeat: no-repeat; 
-        background-position: center; 
+        content: ""; /* This is necessary for the ::before pseudo-element */
+        display: inline-block; /* Ensure the pseudo-element behaves like an inline element */
+        width: 45%; /* Set the width of the pseudo-element */
+        height: 100%; /* Set the height of the pseudo-element */
+        background-image: url(images/TrimSplit.png); /* Set the background image */
+        background-size: cover; /* Cover the entire area of the container */
+        background-repeat: no-repeat; /* Prevent the background from repeating */
+        background-position: center; /* Center the background image */
     }
     #text-btn::before {
-        content: ""; 
-        display: inline-block; 
-        width: 39%; 
-        height: 100%; 
-        background-image: url(images/Text.png); 
-        background-size: cover; 
-        background-repeat: no-repeat; 
-        background-position: center; 
+        content: ""; /* This is necessary for the ::before pseudo-element */
+        display: inline-block; /* Ensure the pseudo-element behaves like an inline element */
+        width: 39%; /* Set the width of the pseudo-element */
+        height: 100%; /* Set the height of the pseudo-element */
+        background-image: url(images/Text.png); /* Set the background image */
+        background-size: cover; /* Cover the entire area of the container */
+        background-repeat: no-repeat; /* Prevent the background from repeating */
+        background-position: center; /* Center the background image */
     }
     #fxbtn::before {
-        content: ""; 
-        display: inline-block; 
-        width:  60%; 
-        height: 100%; 
-        background-image: url(images/fxbtn.png); 
-        background-size: cover; 
-        background-repeat: no-repeat; 
-        background-position: center; 
+        content: ""; /* This is necessary for the ::before pseudo-element */
+        display: inline-block; /* Ensure the pseudo-element behaves like an inline element */
+        width:  60%; /* Set the width of the pseudo-element */
+        height: 100%; /* Set the height of the pseudo-element */
+        background-image: url(images/fxbtn.png); /* Set the background image */
+        background-size: cover; /* Cover the entire area of the container */
+        background-repeat: no-repeat; /* Prevent the background from repeating */
+        background-position: center; /* Center the background image */
     }
     #volumebtn::before {
-        content: ""; 
-        display: inline-block; 
-        width:  60%; 
-        height: 80%; 
-        background-image: url(images/volumebtn.png); 
-        background-size: cover; 
-        background-repeat: no-repeat; 
-        background-position: center; 
+        content: ""; /* This is necessary for the ::before pseudo-element */
+        display: inline-block; /* Ensure the pseudo-element behaves like an inline element */
+        width:  60%; /* Set the width of the pseudo-element */
+        height: 80%; /* Set the height of the pseudo-element */
+        background-image: url(images/volumebtn.png); /* Set the background image */
+        background-size: cover; /* Cover the entire area of the container */
+        background-repeat: no-repeat; /* Prevent the background from repeating */
+        background-position: center; /* Center the background image */
     }
     #cropbtn::before {
-        content: ""; 
-        display: inline-block; 
-        width: 50%; 
-        height: 80%; 
-        background-image: url(images/Crop.png); 
-        background-size: cover; 
-        background-repeat: no-repeat; 
-        background-position: center; 
+        content: ""; /* This is necessary for the ::before pseudo-element */
+        display: inline-block; /* Ensure the pseudo-element behaves like an inline element */
+        width: 50%; /* Set the width of the pseudo-element */
+        height: 80%; /* Set the height of the pseudo-element */
+        background-image: url(images/Crop.png); /* Set the background image */
+        background-size: cover; /* Cover the entire area of the container */
+        background-repeat: no-repeat; /* Prevent the background from repeating */
+        background-position: center; /* Center the background image */
     }
     #fadebtn::before {
-        content: ""; 
-        display: inline-block; 
-        width: 50%; 
-        height: 90%; 
-        background-image: url(images/Fade.png); 
-        background-size: cover; 
-        background-repeat: no-repeat; 
-        background-position: center; 
+        content: ""; /* This is necessary for the ::before pseudo-element */
+        display: inline-block; /* Ensure the pseudo-element behaves like an inline element */
+        width: 50%; /* Set the width of the pseudo-element */
+        height: 90%; /* Set the height of the pseudo-element */
+        background-image: url(images/Fade.png); /* Set the background image */
+        background-size: cover; /* Cover the entire area of the container */
+        background-repeat: no-repeat; /* Prevent the background from repeating */
+        background-position: center; /* Center the background image */
     }
     #opacitybtn::before {
-        content: ""; 
-        display: inline-block; 
-        width: 60%; 
-        height: 80%; 
-        background-image: url(images/opacitybtn.png); 
-        background-size: cover; 
-        background-repeat: no-repeat; 
-        background-position: center; 
+        content: ""; /* This is necessary for the ::before pseudo-element */
+        display: inline-block; /* Ensure the pseudo-element behaves like an inline element */
+        width: 60%; /* Set the width of the pseudo-element */
+        height: 80%; /* Set the height of the pseudo-element */
+        background-image: url(images/opacitybtn.png); /* Set the background image */
+        background-size: cover; /* Cover the entire area of the container */
+        background-repeat: no-repeat; /* Prevent the background from repeating */
+        background-position: center; /* Center the background image */
     }
     .splitIcon::before {
-        content: ""; 
-        display: inline-block; 
-        width: 40%; 
-        height: 100%; 
-        background-image: url(images/linkplus.png); 
-        background-size: cover; 
-        background-repeat: no-repeat; 
-        background-position: center; 
+        content: ""; /* This is necessary for the ::before pseudo-element */
+        display: inline-block; /* Ensure the pseudo-element behaves like an inline element */
+        width: 40%; /* Set the width of the pseudo-element */
+        height: 100%; /* Set the height of the pseudo-element */
+        background-image: url(images/linkplus.png); /* Set the background image */
+        background-size: cover; /* Cover the entire area of the container */
+        background-repeat: no-repeat; /* Prevent the background from repeating */
+        background-position: center; /* Center the background image */
     }
     .pause::before {
-        content: ""; 
-        display: inline-block; 
-        width: 50%; 
-        height: 100%; 
-        background-image: url(images/pausebtn.png); 
-        background-size: cover; 
-        background-repeat: no-repeat; 
-        background-position: center; 
+        content: ""; /* This is necessary for the ::before pseudo-element */
+        display: inline-block; /* Ensure the pseudo-element behaves like an inline element */
+        width: 50%; /* Set the width of the pseudo-element */
+        height: 100%; /* Set the height of the pseudo-element */
+        background-image: url(images/pausebtn.png); /* Set the background image */
+        background-size: cover; /* Cover the entire area of the container */
+        background-repeat: no-repeat; /* Prevent the background from repeating */
+        background-position: center; /* Center the background image */
     }
     .stop::before {
-        content: ""; 
-        display: inline-block; 
-        width: 45%; 
-        height: 55%; 
-        background-image: url(images/stopbtn.png); 
-        background-size: cover; 
-        background-repeat: no-repeat; 
-        background-position: center; 
+        content: ""; /* This is necessary for the ::before pseudo-element */
+        display: inline-block; /* Ensure the pseudo-element behaves like an inline element */
+        width: 45%; /* Set the width of the pseudo-element */
+        height: 55%; /* Set the height of the pseudo-element */
+        background-image: url(images/stopbtn.png); /* Set the background image */
+        background-size: cover; /* Cover the entire area of the container */
+        background-repeat: no-repeat; /* Prevent the background from repeating */
+        background-position: center; /* Center the background image */
     }
     .file::before {
-        content: ""; 
-        display: inline-block; 
-        width: 50%; 
-        height: 100%; 
-        background-image: url(images/foldericon.png); 
-        background-size: cover; 
-        background-repeat: no-repeat; 
-        background-position: center; 
+        content: ""; /* This is necessary for the ::before pseudo-element */
+        display: inline-block; /* Ensure the pseudo-element behaves like an inline element */
+        width: 50%; /* Set the width of the pseudo-element */
+        height: 100%; /* Set the height of the pseudo-element */
+        background-image: url(images/foldericon.png); /* Set the background image */
+        background-size: cover; /* Cover the entire area of the container */
+        background-repeat: no-repeat; /* Prevent the background from repeating */
+        background-position: center; /* Center the background image */
     }
     .video-file-left::before {
-        content: ""; 
-        display: inline-block; 
-        width: 80%; 
-        height: 100%; 
-        background-image: url(images/videoicon.png); 
-        background-size: cover; 
-        background-repeat: no-repeat; 
-        background-position: center; 
+        content: ""; /* This is necessary for the ::before pseudo-element */
+        display: inline-block; /* Ensure the pseudo-element behaves like an inline element */
+        width: 80%; /* Set the width of the pseudo-element */
+        height: 100%; /* Set the height of the pseudo-element */
+        background-image: url(images/videoicon.png); /* Set the background image */
+        background-size: cover; /* Cover the entire area of the container */
+        background-repeat: no-repeat; /* Prevent the background from repeating */
+        background-position: center; /* Center the background image */
     }
     .search-btn::before {
-        content: ""; 
-        display: inline-block; 
-        width: 40%; 
-        height: 100%; 
-        background-image: url(images/addFavorite.png); 
-        background-size: cover; 
-        background-repeat: no-repeat; 
-        background-position: center; 
+        content: ""; /* This is necessary for the ::before pseudo-element */
+        display: inline-block; /* Ensure the pseudo-element behaves like an inline element */
+        width: 40%; /* Set the width of the pseudo-element */
+        height: 100%; /* Set the height of the pseudo-element */
+        background-image: url(images/addFavorite.png); /* Set the background image */
+        background-size: cover; /* Cover the entire area of the container */
+        background-repeat: no-repeat; /* Prevent the background from repeating */
+        background-position: center; /* Center the background image */
     }
     .search-btn-last::before {
-        content: ""; 
-        display: inline-block; 
-        width: 40%; 
-        height: 100%; 
-        background-image: url(images/addFavorite.png); 
-        background-size: cover; 
-        background-repeat: no-repeat; 
-        background-position: center; 
+        content: ""; /* This is necessary for the ::before pseudo-element */
+        display: inline-block; /* Ensure the pseudo-element behaves like an inline element */
+        width: 40%; /* Set the width of the pseudo-element */
+        height: 100%; /* Set the height of the pseudo-element */
+        background-image: url(images/addFavorite.png); /* Set the background image */
+        background-size: cover; /* Cover the entire area of the container */
+        background-repeat: no-repeat; /* Prevent the background from repeating */
+        background-position: center; /* Center the background image */
     }
     #normal-edit::before {
-        content: ""; 
-        display: inline-block; 
-        width: 45%; 
-        height: 100%; 
-        background-image: url(images/normaledit.png); 
-        background-size: cover; 
-        background-repeat: no-repeat; 
-        background-position: center; 
+        content: ""; /* This is necessary for the ::before pseudo-element */
+        display: inline-block; /* Ensure the pseudo-element behaves like an inline element */
+        width: 45%; /* Set the width of the pseudo-element */
+        height: 100%; /* Set the height of the pseudo-element */
+        background-image: url(images/normaledit.png); /* Set the background image */
+        background-size: cover; /* Cover the entire area of the container */
+        background-repeat: no-repeat; /* Prevent the background from repeating */
+        background-position: center; /* Center the background image */
     }
     #select-region::before {
-        content: ""; 
-        display: inline-block; 
-        width: 45%; 
-        height: 100%; 
-        background-image: url(images/selectregion.png); 
-        background-size: cover; 
-        background-repeat: no-repeat; 
-        background-position: center; 
+        content: ""; /* This is necessary for the ::before pseudo-element */
+        display: inline-block; /* Ensure the pseudo-element behaves like an inline element */
+        width: 45%; /* Set the width of the pseudo-element */
+        height: 100%; /* Set the height of the pseudo-element */
+        background-image: url(images/selectregion.png); /* Set the background image */
+        background-size: cover; /* Cover the entire area of the container */
+        background-repeat: no-repeat; /* Prevent the background from repeating */
+        background-position: center; /* Center the background image */
     }
     #zoom-edit::before {
-        content: ""; 
-        display: inline-block; 
-        width: 45%; 
-        height: 100%; 
-        background-image: url(images/zoomedit.png); 
-        background-size: cover; 
-        background-repeat: no-repeat; 
-        background-position: center; 
+        content: ""; /* This is necessary for the ::before pseudo-element */
+        display: inline-block; /* Ensure the pseudo-element behaves like an inline element */
+        width: 45%; /* Set the width of the pseudo-element */
+        height: 100%; /* Set the height of the pseudo-element */
+        background-image: url(images/zoomedit.png); /* Set the background image */
+        background-size: cover; /* Cover the entire area of the container */
+        background-repeat: no-repeat; /* Prevent the background from repeating */
+        background-position: center; /* Center the background image */
     }
     #lock-event::before {
-        content: ""; 
-        display: inline-block; 
-        width: 45%; 
-        height: 100%; 
-        background-image: url(images/lockevent.png); 
-        background-size: cover; 
-        background-repeat: no-repeat; 
-        background-position: center; 
+        content: ""; /* This is necessary for the ::before pseudo-element */
+        display: inline-block; /* Ensure the pseudo-element behaves like an inline element */
+        width: 45%; /* Set the width of the pseudo-element */
+        height: 100%; /* Set the height of the pseudo-element */
+        background-image: url(images/lockevent.png); /* Set the background image */
+        background-size: cover; /* Cover the entire area of the container */
+        background-repeat: no-repeat; /* Prevent the background from repeating */
+        background-position: center; /* Center the background image */
     }
     #insert-marker::before {
-        content: ""; 
-        display: inline-block; 
-        width: 45%; 
-        height: 100%; 
-        background-image: url(images/insertmarker.png); 
-        background-size: cover; 
-        background-repeat: no-repeat; 
-        background-position: center; 
+        content: ""; /* This is necessary for the ::before pseudo-element */
+        display: inline-block; /* Ensure the pseudo-element behaves like an inline element */
+        width: 45%; /* Set the width of the pseudo-element */
+        height: 100%; /* Set the height of the pseudo-element */
+        background-image: url(images/insertmarker.png); /* Set the background image */
+        background-size: cover; /* Cover the entire area of the container */
+        background-repeat: no-repeat; /* Prevent the background from repeating */
+        background-position: center; /* Center the background image */
     }
     #insert-region::before {
-        content: ""; 
-        display: inline-block; 
-        width: 45%; 
-        height: 100%; 
-        background-image: url(images/insertregion.png); 
-        background-size: cover; 
-        background-repeat: no-repeat; 
-        background-position: center; 
+        content: ""; /* This is necessary for the ::before pseudo-element */
+        display: inline-block; /* Ensure the pseudo-element behaves like an inline element */
+        width: 45%; /* Set the width of the pseudo-element */
+        height: 100%; /* Set the height of the pseudo-element */
+        background-image: url(images/insertregion.png); /* Set the background image */
+        background-size: cover; /* Cover the entire area of the container */
+        background-repeat: no-repeat; /* Prevent the background from repeating */
+        background-position: center; /* Center the background image */
     }
     #snapping-tool::before {
-        content: ""; 
-        display: inline-block; 
-        width: 40%; 
-        height: 100%; 
-        background-image: url(images/snappingtool.png); 
-        background-size: cover; 
-        background-repeat: no-repeat; 
-        background-position: center; 
+        content: ""; /* This is necessary for the ::before pseudo-element */
+        display: inline-block; /* Ensure the pseudo-element behaves like an inline element */
+        width: 40%; /* Set the width of the pseudo-element */
+        height: 100%; /* Set the height of the pseudo-element */
+        background-image: url(images/snappingtool.png); /* Set the background image */
+        background-size: cover; /* Cover the entire area of the container */
+        background-repeat: no-repeat; /* Prevent the background from repeating */
+        background-position: center; /* Center the background image */
     }
     #cross-fade::before {
-        content: ""; 
-        display: inline-block; 
-        width: 40%; 
-        height: 100%; 
-        background-image: url(images/crossfade.png); 
-        background-size: cover;
-        background-repeat: no-repeat; 
-        background-position: center; 
+        content: ""; /* This is necessary for the ::before pseudo-element */
+        display: inline-block; /* Ensure the pseudo-element behaves like an inline element */
+        width: 40%; /* Set the width of the pseudo-element */
+        height: 100%; /* Set the height of the pseudo-element */
+        background-image: url(images/crossfade.png); /* Set the background image */
+        background-size: cover; /* Cover the entire area of the container */
+        background-repeat: no-repeat; /* Prevent the background from repeating */
+        background-position: center; /* Center the background image */
     }
     #fade::before {
-        content: "";
-        display: inline-block;
-        width: 40%;
-        height: 100%;
-        background-image: url(images/Fade.png);
-        background-size: cover; 
-        background-repeat: no-repeat; 
-        background-position: center; 
+        content: ""; /* This is necessary for the ::before pseudo-element */
+        display: inline-block; /* Ensure the pseudo-element behaves like an inline element */
+        width: 40%; /* Set the width of the pseudo-element */
+        height: 100%; /* Set the height of the pseudo-element */
+        background-image: url(images/Fade.png); /* Set the background image */
+        background-size: cover; /* Cover the entire area of the container */
+        background-repeat: no-repeat; /* Prevent the background from repeating */
+        background-position: center; /* Center the background image */
     }
     #link-plus::before {
-        content: ""; 
-        display: inline-block;
-        width: 40%; 
-        height: 100%;
-        background-image: url(images/linkplus.png);
-        background-size: cover; 
-        background-repeat: no-repeat; 
-        background-position: center;
+        content: ""; /* This is necessary for the ::before pseudo-element */
+        display: inline-block; /* Ensure the pseudo-element behaves like an inline element */
+        width: 40%; /* Set the width of the pseudo-element */
+        height: 100%; /* Set the height of the pseudo-element */
+        background-image: url(images/linkplus.png); /* Set the background image */
+        background-size: cover; /* Cover the entire area of the container */
+        background-repeat: no-repeat; /* Prevent the background from repeating */
+        background-position: center; /* Center the background image */
     }
     #link-minus::before {
-        content: ""; 
-        display: inline-block; 
-        width: 40%; 
-        height: 100%; 
-        background-image: url(images/linkminus.png); 
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center; 
+        content: ""; /* This is necessary for the ::before pseudo-element */
+        display: inline-block; /* Ensure the pseudo-element behaves like an inline element */
+        width: 40%; /* Set the width of the pseudo-element */
+        height: 100%; /* Set the height of the pseudo-element */
+        background-image: url(images/linkminus.png); /* Set the background image */
+        background-size: cover; /* Cover the entire area of the container */
+        background-repeat: no-repeat; /* Prevent the background from repeating */
+        background-position: center; /* Center the background image */
     }
     #auto-ripple::before {
-        content: ""; 
-        display: inline-block;
-        width: 40%; 
-        height: 100%;
-        background-image: url(images/autoripple.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center; 
+        content: ""; /* This is necessary for the ::before pseudo-element */
+        display: inline-block; /* Ensure the pseudo-element behaves like an inline element */
+        width: 40%; /* Set the width of the pseudo-element */
+        height: 100%; /* Set the height of the pseudo-element */
+        background-image: url(images/autoripple.png); /* Set the background image */
+        background-size: cover; /* Cover the entire area of the container */
+        background-repeat: no-repeat; /* Prevent the background from repeating */
+        background-position: center; /* Center the background image */
     }
     #crop-btn::before {
-        content: ""; 
-        display: inline-block;
-        width: 40%;
-        height: 100%;
-        background-image: url(images/Crop.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+        content: ""; /* This is necessary for the ::before pseudo-element */
+        display: inline-block; /* Ensure the pseudo-element behaves like an inline element */
+        width: 40%; /* Set the width of the pseudo-element */
+        height: 100%; /* Set the height of the pseudo-element */
+        background-image: url(images/Crop.png); /* Set the background image */
+        background-size: cover; /* Cover the entire area of the container */
+        background-repeat: no-repeat; /* Prevent the background from repeating */
+        background-position: center; /* Center the background image */
     }
     #crop-btn::before {
-        content: "";
-        display: inline-block;
-        width: 40%;
-        height: 100%;
-        background-image: url(images/Crop.png);
-        background-size: cover;
-        background-repeat: no-repeat; 
-        background-position: center;
+        content: ""; /* This is necessary for the ::before pseudo-element */
+        display: inline-block; /* Ensure the pseudo-element behaves like an inline element */
+        width: 40%; /* Set the width of the pseudo-element */
+        height: 100%; /* Set the height of the pseudo-element */
+        background-image: url(images/Crop.png); /* Set the background image */
+        background-size: cover; /* Cover the entire area of the container */
+        background-repeat: no-repeat; /* Prevent the background from repeating */
+        background-position: center; /* Center the background image */
     }
     .textbox {
         font-size: 20px;
@@ -1104,7 +1104,7 @@
         position: absolute;
         background-color: #f9f9f9;
         min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
         z-index: 1;
     }
     .dropdown-content a {
@@ -1117,3 +1117,8 @@
     .file-dropdown:hover .dropdown-content {
         display: block;
     }
+
+
+
+
+
