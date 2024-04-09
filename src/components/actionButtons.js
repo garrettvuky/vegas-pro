@@ -6,12 +6,22 @@ import pan from '../videos/pan.mp4';
 import zoom from '../videos/zoom.mp4';
 export default function ActionButtonNav({ onSplit }) {
     const ChangeVid = () => {
-        const videoElement = document.getElementById('vid');
-        videoElement.src = fade;
+        try {
+            const videoElement = document.getElementById('vid');
+            videoElement.src = fade;
+        } 
+        catch(error) {
+            console.error(error);
+        }
     }
     const ChangeVidZoom = () => {
-        const videoElement = document.getElementById('vid');
-        videoElement.src = zoom;
+        try {
+            const videoElement = document.getElementById('vid');
+            videoElement.src = zoom;
+        }
+        catch(error) {
+            console.error(error);
+        }
     }
     const AlertUser = () => {
         alert('Feature Not Yet Implemented.');
@@ -43,8 +53,13 @@ export default function ActionButtonNav({ onSplit }) {
                 <div>
                     <button className='contentbtn'onClick=
                         {() => {
-                            const video = document.getElementById('vid');
-                            video.src = 'http://localhost:3000/static/media/sampleText.466e63eec72e759b3c79.mp4';
+                            try {
+                                const video = document.getElementById('vid');
+                                video.src = 'http://localhost:3000/static/media/sampleText.466e63eec72e759b3c79.mp4';
+                            }
+                            catch(error) {
+                                console.error(error);
+                            }
                             close()
                             }}>
                             Add Text
@@ -63,16 +78,26 @@ export default function ActionButtonNav({ onSplit }) {
                     <div>
                         <button className='contentbtn-pan'onClick=
                             {() => {
-                                const videoElement = document.getElementById('vid');
-                                videoElement.src = zoom;
+                                try {
+                                    const videoElement = document.getElementById('vid');
+                                    videoElement.src = zoom;
+                                }
+                                catch(error) {
+                                    console.error(error);
+                                }
                                 close()
                                 }}>
                                 Zoom Video
                         </button>
                         <button className='contentbtn-pan'onClick=
                             {() => {
-                                const videoElement = document.getElementById('vid');
-                                videoElement.src = pan;
+                                try {
+                                    const videoElement = document.getElementById('vid');
+                                    videoElement.src = pan;
+                                }
+                                catch(error) {
+                                    console.error(error);
+                                }
                                 close()
                                 }}>
                                 Pan Video Across Screen
