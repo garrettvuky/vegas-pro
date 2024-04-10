@@ -21,6 +21,9 @@ export default function MenuPreviewEffectContainer( {wasDropped} ) {
         if(effect.style.background == 'green') {
             effect.style.background = 'red';
         }
+        else if(effect.style.background == 'grey') {
+            effect.style.background = '#cccccc';
+        }
         else {
             effect.style.background = 'grey';
         }
@@ -36,7 +39,7 @@ export default function MenuPreviewEffectContainer( {wasDropped} ) {
     const effectRemove = () => {
         for(let i = 0; i < effectElements.length; i++) {
             const effect = document.getElementById(effectElements[i]);
-            effect.style.background = 'white';
+            effect.style.background = '#cccccc';
         }
         effectElements = [];
         alert('Selected Effects Removed');
